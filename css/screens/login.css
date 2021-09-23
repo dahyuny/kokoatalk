@@ -1,0 +1,71 @@
+body {
+  font-family: "Didact Gothic", sans-serif;
+}
+/* fonts.google.com 에서 폰트 가져올 수 이따 */
+
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px 0px;
+  text-align: center;
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.6;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 20px 0px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+/* ㄴinput의 submit 타입에는 적용하지 X */
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+
+#login-form a:hover {
+  text-decoration: underline;
+}
